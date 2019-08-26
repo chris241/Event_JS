@@ -1,11 +1,11 @@
 // fonctionnalité n°1
-let e = document.querySelector('footer');
-e.addEventListener('click',(function(event){
-let i = 1;
-console.log("clique", + i);
-i++; 
-}));
-
+let e = document.getElementsByTagName('footer')[0];
+var  y = 1;
+function clique(){
+console.log('cliquer ' +y); 
+y= y+1;
+}
+e.addEventListener('click', clique);
 //fonctionnalité n°2
 let navParent = document.getElementsByClassName('navbar-toggler')[0];
 let navCollapse = document.getElementById('navbarHeader');
