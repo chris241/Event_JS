@@ -40,4 +40,11 @@ addEventListener('click',function(){
     }
 });
 
+//fonctionnalité n°5
+let a  = document.getElementById("navbarHeader")[0];
+let b = document.getElementsByTagName('link')[0];
+addEventListener('click', function(){
+b.disabled = true;
+
+});
 
