@@ -16,7 +16,7 @@ navParent.addEventListener('click',function(){
 //fonctionnalité n°3
 let tCard1 = document.getElementsByClassName('card-text')[0];
 let eCard1 = document.querySelector('button.btn.btn-outline-secondary')[0];
-console.log(textCard1.innerHTML);
+console.log(tCard1.innerHTML);
 addEventListener('click',function(){
     if(tCard1.style.color === "red"){
         tCard1.style.color = "";
