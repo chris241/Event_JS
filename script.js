@@ -47,4 +47,16 @@ addEventListener('click', function(){
 b.disabled = true;
 
 });
+//fonctionnalité n°6
+let cards = document.getElementsByClassName('col-md-4');
+let buttons = document.getElementsByClassName('btn-group');for(let i = 0; i<cards.length;i++){
+    buttons[i].firstElementChild.addEventListener('mouseover', function() {
+     if (cards[i].getElementsByClassName('card-img-top')[0].style.width === "20%") {
+       cards[i].getElementsByClassName('card-img-top')[0].style.width = "100%";
+       cards[i].getElementsByClassName('card-text')[0].style.display = "block";
+     } else {
+         cards[i].getElementsByClassName('card-img-top')[0].style.width = "20%";
+         cards[i].getElementsByClassName('card-text')[0].style.display = "none";
+       }
+   });}
 
